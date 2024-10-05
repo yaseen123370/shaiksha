@@ -1,0 +1,54 @@
+/* Login.css */
+
+/* Background settings for full-screen view */
+.login-container {
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animation for background */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.login-container {
+    animation: gradient-animation 15s ease infinite;
+}
+
+/* Form Styling */
+.login-form {
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-control:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.5);
+}
+
+.btn {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn:hover {
+    background-color: #216f9e;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .login-form {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

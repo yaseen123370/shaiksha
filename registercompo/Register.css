@@ -1,0 +1,38 @@
+/* src/Register.css */
+
+body {
+    background-image: url('https://via.placeholder.com/'); /* Replace with your background image */
+    background-size: cover;
+}
+
+.register-container {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s;
+}
+.phone-code {
+    width: 30%;
+    height: auto;
+}
+
+.phone-input {
+    width: 80%;
+    height: auto;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+}
+
+.text-danger {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
